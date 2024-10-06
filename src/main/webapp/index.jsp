@@ -6,15 +6,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="images/logo11.png">
 
+<link rel="icon" href="images/logo11.png">
 <script src="js/color-modes.js"></script>
 <link href="headers.css" rel="stylesheet">
-
-<!-- <link rel="canonical"
-	href="https://getbootstrap.com/docs/5.3/examples/headers/">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <title>EVENTRA</title>
