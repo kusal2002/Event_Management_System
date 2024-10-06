@@ -9,9 +9,9 @@
 		</div>
 
 		<div class="col-md-3 text-end">
-			<a href="sign_in.jsp"><button type="button"
-					class="btn btn-outline-primary me-2">Sign In</button></a> <a
-				href="sign_up.jsp"><button type="button" class="btn btn-primary">Sign-up</button></a>
+			<a href="sign_in.jsp"><button type="button"	class="btn btn-outline-primary" style="color: #ff4081;border-color: #ff4081;hover-bg: #ff4081;" >Sign In</button></a> 
+			<a href="sign_up.jsp"><button type="button" class="btn btn-outline-primary" style="color: #ff4081;border-color: #ff4081;hover-bg: #ff4081;" >Sign-up</button></a>
 		</div>
 	</header>
 </div>
+<!-- style="color: #ff4081;border-color: #ff4081;hover-bg: #ff4081;" -->

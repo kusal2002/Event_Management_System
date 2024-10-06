@@ -11,10 +11,10 @@
 <script src="js/color-modes.js"></script>
 <link href="headers.css" rel="stylesheet">
 
-<link rel="canonical"
+<!-- <link rel="canonical"
 	href="https://getbootstrap.com/docs/5.3/examples/headers/">
 <link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+	href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <title>EVENTRA</title>
@@ -132,8 +132,13 @@ body {
 	font-weight: 700;
 	color: #F26298FF; /* primary-500 */
 }
+.btn btn-outline-primary-hover{
+	background: #ff4081;
+}
 </style>
+
 </head>
+
 <body>
 	<%@include file="/v_header.jsp"%>
 	<!-- Hero Section -->
