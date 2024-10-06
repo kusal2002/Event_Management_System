@@ -100,7 +100,7 @@
         <p><img src="images/svg/call.svg" class="svg" />+94 771446789</p>
 
         <div class="flex-container">
-          <div><button class="button">Edit Profile</button></div>
+          <div><a href="update_profile.jsp"><button class="button">Edit Profile</button></a></div>
           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
           <div><button class="button">Delete Profile</button></div>
         </div>
