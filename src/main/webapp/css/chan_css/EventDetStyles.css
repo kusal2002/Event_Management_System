@@ -64,32 +64,47 @@ body {
 .collaborators h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .collaborator-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
+}
+
+.collab-btn {
+    flex: 1 1 calc(33.33% - 20px); /* Each button will take up roughly a third of the row, with spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.collab-btn:hover {
+    background-color: #f0f0f0;
 }
 
 .collaborator-item {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 8px;
-    flex: 1;
-    min-width: 200px;
+    width: 100%;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
 .collab-icon {
     font-size: 2rem;
-}
-
-.collab-btn {
-    border: none;
-    border-radius: 20px;
 }
 
 /*                      <----- not working properly

@@ -35,67 +35,44 @@
     </section>
 
     <section class="collaborators">
-        <h2>Event Collaborators</h2>
+        <h2>Collaborators</h2>
         <div class="collaborator-grid">
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">📅</div>
-                <p><strong>LOCATION</strong><br>ITC Rathnadeepa, Colombo.</p>
+                <div class="collab-icon">🎈</div>
+                <p><strong>DECORATIONS</strong></p><p>Deco by hashii</p>
             </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
-            <div class="collaborator-item">
-                <div class="collab-icon">🎨</div>
-                <p><strong>DECORATIONS</strong><br>Ata Chaminda Deco</p>
-            </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
-            <div class="collaborator-item">
-                <div class="collab-icon">📸</div>
-                <p><strong>PHOTOGRAPHY</strong><br>Kata Suminda photography</p>
-            </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="window.location.href='https://www.vitopizza.lk/'">
             <div class="collaborator-item">
                 <div class="collab-icon">🍹</div>
-                <p><strong>REFRESHMENTS</strong><br>Vito's Pizza</p>
+                <p><strong>REFRESHMENTS</strong></p><p>Amila cafe</p>
             </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">🎵</div>
-                <p><strong>CAKES</strong><br>Wasana Bakers</p>
+                <div class="collab-icon">🏢</div>
+                <p><strong>LOCATION</strong></p><p>Hotel Clarion</p>
             </div>
-            </button>
-            
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">📅</div>
-                <p><strong>FLORISTS</strong><br>ITC Rathnadeepa, Colombo.</p>
+                <div class="collab-icon">🎂</div>
+                <p><strong>CAKES</strong></p><p>Cakes by hasshiiiiiiiiiiiiiiii</p>
             </div>
-            </button>
-            
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">📅</div>
-                <p><strong>INVITATIONS</strong><br>ITC Rathnadeepa, Colombo.</p>
+                <div class="collab-icon">📷</div>
+                <p><strong>PHOTOGRAPHY</strong></p><p>Pixel studios</p>
             </div>
-            </button>
-            
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">📅</div>
-                <p><strong>MAKE-UP ARTISTS</strong><br>Batakola aachchiii.</p>
+                <div class="collab-icon">💐</div>
+                <p><strong>Florists</strong></p><p>Amalka flora</p>
             </div>
-            </button>
-
+            <div class="collaborator-item">
+                <div class="collab-icon">💌</div>
+                <p><strong>INVITATIONS</strong></p><p>Happy cards</p>
+            </div>
+            <div class="collaborator-item">
+                <div class="collab-icon">🪞</div>
+                <p><strong>MAKEUP ARTISTS</strong></p><p>Salon Dul</p>
+            </div>
         </div>
+        
     </section>
+
 
     <section class="event-album">
         <h2>Event's album</h2>
