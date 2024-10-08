@@ -12,7 +12,7 @@
     <link href="css/_dropdown.scss" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>EVENTRA | Home</title>
+    <title>EVENTRA | Admin Home</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -142,6 +142,24 @@
         background-clip: text;
         -webkit-background-clip: text;
       }
+      
+      .add_pE-btn, .add_Coll-btn, .add-Ep-btn {
+         display: block;
+         width: 35%;
+         padding: 10px;
+         margin-top: 10px;
+         background-color: #ff69b4;
+         color: #ffffff;
+         border: none;
+         border-radius: 4px;
+         font-size: 16px;
+         cursor: pointer;
+      }
+      
+      .add_pE-btn:hover, .add_Coll-btn:hover, .add-Ep-btn:hover {
+         background-color: #ff1493;
+      }
+      
     </style>
   </head>
 
@@ -278,8 +296,8 @@
 
       <a href="#" class="view-more">View more</a>
 
-      <button type="button" class="add_pE-btn">Add Previous Events</button>
-      <button type="button" class="add_Coll-btn">Add Collaborators</button>
+      <br><br>
+      <button type="button" class="add_pE-btn" onclick="alert('success')">Add Previous Events</button>
 
     </div>
 
@@ -312,6 +330,11 @@
           <h4>Office events</h4>
         </div>
       </div>
+      
+      <br><br>
+      <button type="button" class="add_Coll-btn" onclick="window.location.href='collaboratorFormCreate.jsp'">Add Collaborators</button>
+      <button type="button" class="add-Ep-btn">Add Event Planners</button>
+      
     </div>
     <%@include file="/footer.jsp"%>
   </body>

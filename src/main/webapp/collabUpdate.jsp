@@ -5,12 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="images/logo11.png" />
+    <script src="js/color-modes.js"></script>
+    <link href="css/headers.css" rel="stylesheet" />
+    <link href="css/_dropdown.scss" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
     <title>Collaborator Update</title>
     <link rel="stylesheet" href="css/chan_css/collabUpdateStyle.css">
 </head>
 <body>
 
-    
+    <%@include file="/header.jsp"%>
     <section class="event-banner">
         <div class="banner-text">
             <h1>Enter Collaborator Details</h1>
@@ -77,6 +84,8 @@
             <button class="update-btn">Update Profile</button>
         </div>
     </section>
+    
+    <%@include file="/footer.jsp"%>
 
 </body>
 </html>
