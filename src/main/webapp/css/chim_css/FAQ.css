@@ -12,11 +12,6 @@ body {
 }
 
 /* Header */
-header {
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
-}
 
 header h1 {
     color: #fff;
@@ -45,12 +40,7 @@ header h1 {
 }
 
 /* Footer */
-footer {
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
-    color: #fff;
-}
+
 
 footer p {
     margin: 0;

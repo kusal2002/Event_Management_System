@@ -131,16 +131,8 @@ nav ul li a.active {
 }
 
 /* Footer */
-footer {
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
-    color: #fff;
-}
 
-footer p {
-    margin: 0;
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
