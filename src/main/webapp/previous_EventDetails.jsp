@@ -12,7 +12,7 @@
     <link href="css/_dropdown.scss" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     
-    <title>Event Details</title>
+    <title>Previous Event Details</title>
     <link rel="stylesheet" href="css/chan_css/EventDetStyles.css">
 </head>
 <body>
