@@ -142,6 +142,23 @@
         background-clip: text;
         -webkit-background-clip: text;
       }
+      
+      .str-ev-btn {
+         display: block;
+         width: 35%;
+         padding: 10px;
+         margin-top: 10px;
+         background-color: #ff69b4;
+         color: #ffffff;
+         border: none;
+         border-radius: 4px;
+         font-size: 16px;
+         cursor: pointer;
+      }
+      
+      .str-ev-btn:hover {
+         background-color: #ff1493;
+      }
     </style>
   </head>
 
@@ -276,8 +293,13 @@
         </div>
       </div>
 
-      <a href="#" class="view-more">View more</a>
+      
     </div>
+    
+    <center>
+      <h2>Let's make your dreams come true......</h2>
+      <button type="button" class="str-ev-btn" onclick="window.location.href='StartAnEventForm_Create.jsp'">Start an Event</button>
+    </center>
 
     <!-- Event Categories Section -->
     <div class="section">
@@ -308,6 +330,8 @@
           <h4>Office events</h4>
         </div>
       </div>
+      
+      
     </div>
     <%@include file="/footer.jsp"%>
   </body>
