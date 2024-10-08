@@ -26,23 +26,19 @@
 
     <section class="event-details">
         <h2>Collaborator Form</h2>
-        <div class="container">
+        <div class="container_ch">
             <h3>General Information</h3><br>
             <div class="form-section">
                 <label for="collaborator-name">Collaborator Name</label>
                 <input type="text" id="collaborator-name" name="vend-name" placeholder="Enter collaborator name" required>
+                
+                <label for="contact-number">Contact Number</label>
+                <input type="text" id="contact-number" name="vend-contact" placeholder="Enter contact number">
+                
+                <label for="address">Address</label>
+                <input type="text" id="address" name="vend-address" placeholder="Enter address">
             </div>
     
-            <div class="input-group">
-                <div>
-                    <label for="contact-number">Contact Number</label>
-                    <input type="text" id="contact-number" name="vend-contact" placeholder="Enter contact number">
-                </div>
-                <div>
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="vend-address" placeholder="Enter address">
-                </div>
-            </div>
     
             <div class="form-section">
                 <label for="service-type">Service Category</label>
@@ -59,27 +55,30 @@
                     <option value="makeupArtist">Make-up Artists</option>
                 </select>
             </div>
-    
-            <div class="input-group">
-                <div>
+            
+            <div class="form-section">
                     <label for="previous-experience">Previous Experience</label>
                     <input type="text" id="previous-experience" name="vend-experience" placeholder="Enter previous-experience details">
-                </div>
-                <div>
+                    
                     <label for="client-feedback">Client Feedback</label>
                     <textarea id="client-feedback" rows="3" name="cli-Feedback" placeholder="Input description"></textarea>
-                </div>
+                    
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="3" name="vend-Desc" placeholder="Provide Vendor details"></textarea>
             </div>
     
-            <div class="form-section">
-                <label for="description">Description</label>
-                <textarea id="description" rows="3" name="vend-Desc" placeholder="Provide Vendor details"></textarea>
-            </div>
             
             <label for="upload-photos">Upload Photos</label>
-            <div class="upload-btn">
-                <input type="file" id="upload-photos" name="up-photo">
+            
+            <center>
+            <div class="upload-btn1">
+                <input type="file" id="upload-photos" name="up-photo1">
             </div>
+            
+            <div class="upload-btn2">
+                <input type="file" id="upload-photos" name="up-photo2">
+            </div>
+            </center>
 
             <button class="update-btn">Update Profile</button>
         </div>
