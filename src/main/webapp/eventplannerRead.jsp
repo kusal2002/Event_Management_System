@@ -1,16 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="images/logo11.png" />
+    <script src="js/color-modes.js"></script>
+    <link href="css/headers.css" rel="stylesheet" />
+    <link href="css/_dropdown.scss" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
     <title>Event Planner Details</title>
     <link rel="stylesheet" href="css/yoyo_css/eventplannerRead.css">
 </head>
 <body>
-
+	<%@include file="/v_header.jsp"%>
+	
     <section class="event-banner">
         <div class="banner-text">
             <h1>YoYo</h1>
@@ -71,6 +79,6 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCPLAcRuRPq-RPNMRoYJR17ZoXIcMolINPQ&s" alt="Event photo" name="ev-al-photo5">
         </div>
     </section>
-
+	<%@include file="/footer.jsp"%>
 </body>
 </html>
