@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #ff0077;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+nav ul li a.active {
+    color: #ff0077;
+    border-bottom: 2px solid #ff0077;
+}
+
+.profile {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* My Events Section */
+.my-events-section {
+    padding: 50px 0;
+}
+
+.profile-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.profile-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 15px;
+}
+
+.event-details h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.event-details p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.event-details .partyType {
+    color: #ff0077;
+}
+
+.event-details .EPname {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .events-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

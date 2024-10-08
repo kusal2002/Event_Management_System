@@ -1,0 +1,68 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 50px 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.faq-item h2 {
+    color: #ff0077;
+    font-size: 1.5rem;
+}
+
+.faq-item p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
