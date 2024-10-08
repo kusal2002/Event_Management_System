@@ -183,7 +183,7 @@
         <div class="event-card">
           <img src="https://images.agoramedia.com/wte3.0/gcms/first-birthday-party-tucarritobyyas-600x600.jpeg?width=414" alt="Urban Marathon" />
           <div class="event-details">
-            <h3>Saranyas's 1st Birthday</h3>
+            <h3>Arvin's Birthday</h3>
             <table>
               <tr>
                 <td>
