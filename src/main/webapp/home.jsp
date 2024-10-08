@@ -23,7 +23,7 @@
 
       .section {
         padding: 40px 20px;
-        max-width: 1200px;
+        max-width: 80%;
         margin: 0 auto;
       }
 
