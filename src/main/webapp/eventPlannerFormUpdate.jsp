@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Planner Form</title>
+    <title>Event Planner Form Update</title>
     <link rel="stylesheet" href="css/yoyo_css/eventplannerFormUpdate.css">
 </head>
 <body>
@@ -45,7 +45,7 @@
                     <option value="birthday_parties">Birthday Parties</option>
                     <option value="bride_to_be_parties">Bride to be parties</option>
                     <option value="weddings">Weddings</option>
-                    <option value="get_togethers">Get togethers</option>
+                    <option value="get_togethers">Get to gethers</option>
                     <option value="Office _parties">Office Parties</option>
                     <option value="wedding_proposals">Wedding proposals</option>
                 </select>
