@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Listings</title>
     <link rel="stylesheet" href="css/yoyo_css/My_events.css">
+    
+     <link rel="icon" href="images/logo11.png" />
+    <script src="js/color-modes.js"></script>
+    <link href="css/headers.css" rel="stylesheet" />
+    <link href="css/_dropdown.scss" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+<%@include file="/header.jsp"%>
+
     <section class="events-section">
         <h1>Our Events</h1>
         <center>
@@ -94,8 +102,7 @@
         </div>
         </center>
     </section>
-    <footer>
-        
-    </footer>
+    
+    <%@include file="/footer.jsp"%>
 </body>
 </html>
