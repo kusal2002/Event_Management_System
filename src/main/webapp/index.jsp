@@ -14,6 +14,10 @@
 
 <title>EVENTRA</title>
 <style>
+.dropdown-menu.show {
+    display: block;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;

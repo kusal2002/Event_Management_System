@@ -160,13 +160,13 @@ table, th, td {
 			<p>Edit Your Details</p>
 			<form action="#">
 				<label for="first-name">First name</label> <input type="text"
-					name="f_name" placeholder="First Name" required /> <label
+					name="f_name" placeholder="Saman" required /> <label
 					for="last-name">Last name</label> <input type="text" name="l_name"
-					placeholder="Last Name" required /> <label for="contact-number">Contact
+					placeholder="Kumara" required /> <label for="contact-number">Contact
 					number</label> <input type="text" name="Cnumber"
-					placeholder="Contact number" required /> <label
+					placeholder="07XXXXXXXX" required /> <label
 					for="email">Email</label> <input type="text" name="mail"
-					placeholder="Email" required /> <label for="user-name">Username</label>
+					placeholder="example@gmail.com" required /> <label for="user-name">Username</label>
 				<input type="text" name="username" placeholder="Username" required />
 				<label for="password">Password</label> <input type="password"
 					name="password" placeholder="Password (8 characters)" required />
