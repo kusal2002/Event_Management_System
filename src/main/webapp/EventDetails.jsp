@@ -29,10 +29,8 @@
         <div class="event-info">
             <div class="event-type">
                 <p><strong>EVENT TYPE: </strong>BIRTHDAY PARTY</p>
-                <p><strong>DURATION: </strong>5 HOURS</p>
             </div>
             <p name="eve-Desc">Come celebrate Arvin's 4th birthday in style! We are throwing a fun-filled evening complete with delicious food, great music, and fantastic company. Enjoy a mix of classic hits and modern beats from our live DJ, indulge in a gourmet buffet, and join us for exciting games and surprises throughout the night. Dress to impress and get ready for an unforgettable celebration under the stars. 🎂✨</p>
-            <a href="#" class="read-more">Read more</a>
         </div>
     </section>
 
@@ -71,7 +69,28 @@
             <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
                 <div class="collab-icon">🎵</div>
-                <p><strong>DJ</strong><br>Alan Walker</p>
+                <p><strong>CAKES</strong><br>Wasana Bakers</p>
+            </div>
+            </button>
+            
+            <button type="button" class="collab-btn" onclick="alert('success')">
+            <div class="collaborator-item">
+                <div class="collab-icon">📅</div>
+                <p><strong>FLORISTS</strong><br>ITC Rathnadeepa, Colombo.</p>
+            </div>
+            </button>
+            
+            <button type="button" class="collab-btn" onclick="alert('success')">
+            <div class="collaborator-item">
+                <div class="collab-icon">📅</div>
+                <p><strong>INVITATIONS</strong><br>ITC Rathnadeepa, Colombo.</p>
+            </div>
+            </button>
+            
+            <button type="button" class="collab-btn" onclick="alert('success')">
+            <div class="collaborator-item">
+                <div class="collab-icon">📅</div>
+                <p><strong>MAKE-UP ARTISTS</strong><br>Batakola aachchiii.</p>
             </div>
             </button>
 
