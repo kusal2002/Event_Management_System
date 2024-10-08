@@ -12,7 +12,7 @@
     <link href="css/_dropdown.scss" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>Collaborators</title>
+    <title>Event Planners</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -40,6 +40,7 @@
         overflow: hidden;
         width: 30%;
       }
+      
       .event-card:hover {
 		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
@@ -170,7 +171,7 @@
 
     <!-- Events Section-->
     <div class="section">
-      <h2>Collaborators</h2>
+      <h2>Event Planners</h2>
       <div class="events-grid">
         <!-- Event Card 1 -->
         <div class="event-card">

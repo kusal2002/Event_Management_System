@@ -64,9 +64,11 @@
         
         </div>
 
-         <br><br>
+        <center>
+        <br><br>
         <button type="button" value="Edit" class="edit-btn" onclick="window.location.href='collabUpdate.jsp'">Edit</button>
         <button type="button" value="Delete" class="delete-btn" onclick="alert('Deleted')">Delete</button>
+        </center>
 
     </section>
     
