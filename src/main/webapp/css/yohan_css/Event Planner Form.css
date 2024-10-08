@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf1f3;
+    color: #333;
+}
+
+header {
+    background-image: url('your-banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.form-container {
+    margin: 20px auto;
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-planner-form h2 {
+    text-align: center;
+    color: #ea4c89;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.upload-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.upload-photo input[type="file"] {
+    display: none;
+}
+
+.upload-photo label {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ea4c89;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.save-btn {
+    background-color: #ea4c89;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.save-btn:hover {
+    background-color: #c73d70;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
