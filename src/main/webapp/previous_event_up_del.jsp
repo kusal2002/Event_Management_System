@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Previous Event </title>
+    <title>Update Previous Event </title>
     <link rel="stylesheet" href="css/chim_css/Create an Event.css">
     <link rel="icon" href="images/logo11.png" />
     <script src="js/color-modes.js"></script>
@@ -18,7 +18,7 @@
     
     <main>
         <section class="event-form">
-            <h1>Add Previous Event</h1>
+            <h1>Update Previous Event</h1>
 
             <div class="general-info">
                 <h2>General Information</h2>
@@ -110,7 +110,10 @@
                         <input type="file" name="p_img1">
                         <input type="file" name="p_img2">
                     </div>
-                    <button type="submit" class="start-event-btn">Start Event</button>
+                    <div class="form-group">
+                        <button type="submit" class="start-event-btn">Update Event</button>
+                    </div>
+                    
                 </form>
             </div>
         </section>
