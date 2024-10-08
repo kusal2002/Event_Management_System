@@ -12,7 +12,27 @@
     <link href="css/_dropdown.scss" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     
-    <title>Event Details</title>
+    <title>Previous Event Edit</title>
+    <style>
+    
+      .ev-edit-btn, .ev-dlt-btn {
+          display: block;
+          width: 35%;
+          padding: 10px;
+          margin-top: 10px;
+          background-color: #ff69b4;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+      }
+      
+      .ev-edit-btn, .ev-dlt-btn {
+          background-color: #ff1493;
+      }
+      
+    </style>
     <link rel="stylesheet" href="css/chan_css/EventDetStyles.css">
 </head>
 <body>
@@ -32,8 +52,14 @@
                 <p><strong>DURATION: </strong>5 HOURS</p>
             </div>
             <p name="eve-Desc">Come celebrate Arvin's 4th birthday in style! We are throwing a fun-filled evening complete with delicious food, great music, and fantastic company. Enjoy a mix of classic hits and modern beats from our live DJ, indulge in a gourmet buffet, and join us for exciting games and surprises throughout the night. Dress to impress and get ready for an unforgettable celebration under the stars. 🎂✨</p>
-            <a href="#" class="read-more">Read more</a>
+            
         </div>
+        
+        <br><br>
+        <center>
+        <button type="button" class="ev-edit-btn" onclick="window.location.href='add_prev_event_update.jsp'">Edit Event</button>
+        <button type="button" class="ev-dlt-btn" onclick="window.location.href='#'">Delete Event</button>
+        </center>
     </section>
 
     <section class="collaborators">
