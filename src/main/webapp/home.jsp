@@ -180,7 +180,7 @@
       <h2>Our previous events</h2>
       <div class="events-grid">
         <!-- Event Card 1 -->
-        <div class="event-card">
+        <div class="event-card" onclick="window.location.href='previous_EventDetails.jsp'">
           <img src="https://images.agoramedia.com/wte3.0/gcms/first-birthday-party-tucarritobyyas-600x600.jpeg?width=414" alt="Urban Marathon" />
           <div class="event-details">
             <h3>Arvin's Birthday</h3>
@@ -209,7 +209,7 @@
         </div>
 
         <!-- Event Card 2 -->
-        <div class="event-card">
+        <div class="event-card" onclick="window.location.href='previous_EventDetails2.jsp'">
           <img src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/318465046_1100523980661609_2311824875455224642_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=AdzIJolx1YoQ7kNvgG8sSdT&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=ApOJ1kKQdvrch7XQLownjzo&oh=00_AYCPITqMjFwr9INJRp8GhQC2m98PNmDSUkN_1h0nF7kTjw&oe=670B57F1" alt="Melody Mania" />
           <div class="event-details">
             <h3>Shashini's bride to be party</h3>
@@ -238,7 +238,7 @@
         </div>
 
         <!-- Event Card 3 -->
-        <div class="event-card">
+        <div class="event-card" onclick="window.location.href='previous_EventDetails3.jsp'">
           <img src="https://d3a0yzav6hjrk9.cloudfront.net/2021/08/DSC_3055-2.jpg" alt="Rocking the Stage" />
           <div class="event-details">
             <h3>Tudakshi's Big Day</h3>
