@@ -50,7 +50,7 @@ body {
 /* --------------------------------------------------------------------------------*/
 
 /* form */
-.container {
+.container_yo {
     width: 60%;
     margin: auto;
     padding: 20px;
@@ -86,7 +86,7 @@ select {
 }
 
 /* buttons */
-.upload-btn, .update-btn {
+.upload-btn1, .upload-btn2, .update-btn {
     display: block;
     width: 100%;
     padding: 10px;
@@ -99,7 +99,7 @@ select {
     cursor: pointer;
 }
 
-.upload-btn:hover, .update-btn:hover {
+.upload-btn1:hover, .upload-btn2:hover, .update-btn:hover {
     background-color: #ff1493;
 }
 
