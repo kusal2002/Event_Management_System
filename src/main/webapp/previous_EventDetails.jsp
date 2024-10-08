@@ -29,54 +29,50 @@
         <div class="event-info">
             <div class="event-type">
                 <p><strong>EVENT TYPE: </strong>BIRTHDAY PARTY</p>
-                <p><strong>DURATION: </strong>5 HOURS</p>
             </div>
             <p name="eve-Desc">Come celebrate Arvin's 4th birthday in style! We are throwing a fun-filled evening complete with delicious food, great music, and fantastic company. Enjoy a mix of classic hits and modern beats from our live DJ, indulge in a gourmet buffet, and join us for exciting games and surprises throughout the night. Dress to impress and get ready for an unforgettable celebration under the stars. 🎂✨</p>
-            <a href="#" class="read-more">Read more</a>
         </div>
     </section>
 
     <section class="collaborators">
-        <h2>Event Collaborators</h2>
+        <h2>Collaborators</h2>
         <div class="collaborator-grid">
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">📅</div>
-                <p><strong>LOCATION</strong><br>ITC Rathnadeepa, Colombo.</p>
+                <div class="collab-icon">🎈</div>
+                <p><strong>DECORATIONS</strong></p><p>Deco by hashii</p>
             </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
-            <div class="collaborator-item">
-                <div class="collab-icon">🎨</div>
-                <p><strong>DECORATIONS</strong><br>Ata Chaminda Deco</p>
-            </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
-            <div class="collaborator-item">
-                <div class="collab-icon">📸</div>
-                <p><strong>PHOTOGRAPHY</strong><br>Kata Suminda photography</p>
-            </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="window.location.href='https://www.vitopizza.lk/'">
             <div class="collaborator-item">
                 <div class="collab-icon">🍹</div>
-                <p><strong>REFRESHMENTS</strong><br>Vito's Pizza</p>
+                <p><strong>REFRESHMENTS</strong></p><p>Amila cafe</p>
             </div>
-            </button>
-
-            <button type="button" class="collab-btn" onclick="alert('success')">
             <div class="collaborator-item">
-                <div class="collab-icon">🎵</div>
-                <p><strong>DJ</strong><br>Alan Walker</p>
+                <div class="collab-icon">🏢</div>
+                <p><strong>LOCATION</strong></p><p>Hotel Clarion</p>
             </div>
-            </button>
-
+            <div class="collaborator-item">
+                <div class="collab-icon">🎂</div>
+                <p><strong>CAKES</strong></p><p>Cakes by hasshiiiiiiiiiiiiiiii</p>
+            </div>
+            <div class="collaborator-item">
+                <div class="collab-icon">📷</div>
+                <p><strong>PHOTOGRAPHY</strong></p><p>Pixel studios</p>
+            </div>
+            <div class="collaborator-item">
+                <div class="collab-icon">💐</div>
+                <p><strong>Florists</strong></p><p>Amalka flora</p>
+            </div>
+            <div class="collaborator-item">
+                <div class="collab-icon">💌</div>
+                <p><strong>INVITATIONS</strong></p><p>Happy cards</p>
+            </div>
+            <div class="collaborator-item">
+                <div class="collab-icon">🪞</div>
+                <p><strong>MAKEUP ARTISTS</strong></p><p>Salon Dul</p>
+            </div>
         </div>
+        
     </section>
+
 
     <section class="event-album">
         <h2>Event's album</h2>
