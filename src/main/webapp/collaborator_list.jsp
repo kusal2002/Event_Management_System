@@ -39,6 +39,7 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         width: 30%;
+        cursor: pointer;
       }
       .event-card:hover {
 		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -76,6 +77,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
+        
       }
 
       .category-card {
@@ -85,7 +87,12 @@
         width: 18%;
         text-align: center;
         padding: 20px;
+        cursor: pointer;
       }
+      
+      .category-card:hover {
+		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
 
       .category-card img {
         width: 50px;

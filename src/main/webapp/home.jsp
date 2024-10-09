@@ -11,6 +11,8 @@
     <link href="css/headers.css" rel="stylesheet" />
     <link href="css/_dropdown.scss" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <title>EVENTRA | Home</title>
     <style>
@@ -87,7 +89,11 @@
         width: 18%;
         text-align: center;
         padding: 20px;
+      	cursor: pointer;
       }
+      .category-card:hover {
+		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
 
       .category-card img {
         width: 50px;
@@ -176,11 +182,6 @@
       </div>
     </div>
 
-    <!-- <div class="container">
-      <img src="images/party_banner.jpg" alt="Snow" style="width: 100%;">
-      <div class="centered">Event planning and managing in one place</div>
-    </div> -->
-    <!-- Events Section-->
     <div class="section">
       <h2>Our previous events</h2>
       <div class="events-grid">
@@ -311,6 +312,9 @@
       
       
     </div>
+    
+    
+    
     <%@include file="/footer.jsp"%>
   </body>
 </html>
