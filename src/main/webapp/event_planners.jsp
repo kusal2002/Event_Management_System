@@ -133,18 +133,8 @@
         color: rgb(204, 57, 57); /* primary-500 */
       }
 
-      h1 {
-        font-size: 70px;
-        font-weight: 600;
-        background-image: repeating-radial-gradient(
-          circle closest-corner at 100px 100px,
-          #933ca5,
-          #ff4081 10%,
-          #49828a 20%
-        );
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
+       h1{
+      	color:#d30048;
       }
       
       .str-ev-btn {
@@ -171,7 +161,7 @@
 
     <!-- Events Section-->
     <div class="section">
-      <h2>Event Planners</h2>
+      <h1>Event Planners</h1>
       <div class="events-grid">
         <!-- Event Card 1 -->
         <div class="event-card">

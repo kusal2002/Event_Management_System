@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="images/logo11.png" />
-    <script src="js/color-modes.js"></script>
+    
     <link href="css/headers.css" rel="stylesheet" />
     <link href="css/_dropdown.scss" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -139,20 +139,6 @@
         color: rgb(204, 57, 57); /* primary-500 */
       }
 
-      h1 {
-        font-size: 70px;
-        font-weight: 600;
-        background-image: repeating-radial-gradient(
-          circle closest-corner at 100px 100px,
-          #933ca5,
-          #ff4081 10%,
-          #49828a 20%
-        );
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-      }
-      
       .str-ev-btn {
          display: block;
          width: 35%;
@@ -169,6 +155,9 @@
       .str-ev-btn:hover {
          background-color: #ff1493;
       }
+      h1{
+      	color:#d30048;
+      }
     </style>
   </head>
 
@@ -176,8 +165,9 @@
     <%@include file="/header.jsp"%>
 
     <!-- Events Section-->
+    
     <div class="section">
-      <h2>Collaborators</h2>
+      <h1>Collaborators</h1>
       <div class="events-grid">
         <!-- Event Card 1 -->
         <div class="event-card">

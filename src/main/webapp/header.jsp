@@ -9,9 +9,9 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
        	 <li><a href="#" class="nav-link px-2 link-secondary"></a></li>
        	 <li><a href="#" class="nav-link px-2 link-secondary">Events</a></li>
-       	 <li><a href="collaborator_list.jsp" class="nav-link px-2 link-body-emphasis">Collaborators</a></li>
-       	 <li><a href="event_planners.jsp" class="nav-link px-2 link-body-emphasis">Event Planners</a></li>
-       	 <li><a href="MyEventsjsp.jsp" class="nav-link px-2 link-body-emphasis">My Events</a></li>
+       	 <li><a href="collaborator_list.jsp" class="nav-link px-2 link-secondary">Collaborators</a></li>
+       	 <li><a href="event_planners.jsp" class="nav-link px-2 link-secondary">Event Planners</a></li>
+       	 <li><a href="MyEventsjsp.jsp" class="nav-link px-2 link-secondary">My Events</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">

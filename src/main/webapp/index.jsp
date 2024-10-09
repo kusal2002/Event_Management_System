@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" href="images/logo11.png">
-<script src="js/color-modes.js"></script>
 <link href="headers.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -231,7 +230,7 @@ body {
 			</div>
 		</div>
 
-		<a href="#" class="view-more">View more</a>
+		
 	</div>
 
 	<!-- Event Categories Section -->
