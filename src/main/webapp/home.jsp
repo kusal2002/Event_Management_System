@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%-- <%
+		if (session.getAttribute("name")==null){
+			response.sendRedirect("sign_in.jsp");
+		}
+
+%>
+     --%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,12 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="images/logo11.png" />
-    <link href="css/headers.css" rel="stylesheet" />
-    <link href="css/_dropdown.scss" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
-    <script src="js/bootstrap.bundle.min.js"></script>
-
+	
+	
+	
     <title>EVENTRA | Home</title>
     <style>
     .form-control {
@@ -149,8 +154,7 @@
           circle closest-corner at 100px 100px,
           #933ca5,
           #ff4081 10%,
-          #49828a 20%
-        );
+          #49828a 20%);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
@@ -176,7 +180,7 @@
   </head>
 
   <body>
-    <%@include file="/header.jsp"%>
+    <%@include file="/newHeader.jsp"%>
 
     <div class="container_b">
       <div class="box">

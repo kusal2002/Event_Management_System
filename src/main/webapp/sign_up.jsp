@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="images/logo11.png">
+<link rel="stylesheet" href="alert/dist/sweetalert.css">
 <title>EVENTRA | Sign Up</title>
 <style>
 body {
@@ -53,7 +54,8 @@ body {
 	color: #888;
 }
 
-.form-box input[type="text"], .form-box input[type="password"] {
+.form-box input[type="text"], .form-box input[type="password"],
+	.form-box input[type="email"] {
 	width: 100%;
 	padding: 12px;
 	margin: 10px 0;
@@ -135,8 +137,11 @@ table, th, td {
 	border-collapse: collapse;
 }
 </style>
+<link rel="stylesheet" href="alert/dist/sweetalert.css">
 </head>
 <body>
+
+<input type="hidden" id="status" value="<%request.getAttribute("status");%>">
 
 	<div class="container">
 		<div class="form-box">
@@ -144,7 +149,7 @@ table, th, td {
 				class="cls-btn"></a> <img src="images/logo.png" width="175"
 				height="50">
 			<p>Create an account</p>
-			<form action="#">
+			<form method="post" action="RegistrationServlet">
 				<table>
 					<tr>
 						<td><label for="first-name">First name</label> <input
@@ -158,7 +163,7 @@ table, th, td {
 						<td><label for="contact-number">Contact number</label> <input
 							type="text" name="Cnumber" placeholder="Contact number" required>
 						</td>
-						<td><label for="email">Email</label> <input type="text"
+						<td><label for="email">Email</label> <input type="email"
 							name="mail" placeholder="Email" required></td>
 					</tr>
 					<tr>
@@ -188,7 +193,15 @@ table, th, td {
 			</div>
 		</div>
 	</div>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
 
+	<script type="text/javascript">
+		var status = document.getElementById("status").value;
+		if (status =="sucess") {
+			swal("Congrats","Account Created Successfully","success")
+		}	
+	</script>
 </body>
 </html>
 
