@@ -61,7 +61,7 @@
 					
 					<ul type="none" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
 						<li>
-							<a class="nav-link" href="#"><%=session.getAttribute("name") %></a>
+							<a style="color: black;text-decoration: none;text-align: right;"  href="#"><%=session.getAttribute("name") %></a>
 						</li>
 					</ul>
 
