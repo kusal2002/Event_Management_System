@@ -7,9 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/logo11.png">
-	<script src="js/color-modes.js"></script>
-	<link href="headers.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
     <title>ENVATO | Edit Profile</title>
     <style>
     	body {
@@ -91,7 +89,7 @@
   </head>
 
   <body>
-    <%@include file="/newHeader.jsp"%>
+    <%@include file="/header.jsp"%>
     <div class="container_b">
       <div class="box">
         <h1 class="text">Welcome Amanda Smith!</h1>

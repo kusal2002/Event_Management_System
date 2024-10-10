@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/chim_css/My event read,delete.css">
     
     <link rel="icon" href="images/logo11.png" />
-    <script src="js/color-modes.js"></script>
-    <link href="css/headers.css" rel="stylesheet" />
-    <link href="css/_dropdown.scss" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>  
  <%@include file="/header.jsp"%>

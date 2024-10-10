@@ -180,7 +180,7 @@
   </head>
 
   <body>
-    <%@include file="/newHeader.jsp"%>
+    <%@include file="/header.jsp"%>
 
     <div class="container_b">
       <div class="box">

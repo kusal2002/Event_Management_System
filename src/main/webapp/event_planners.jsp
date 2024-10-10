@@ -8,10 +8,7 @@
 
     <link rel="icon" href="images/logo11.png" />
     
-    <link href="css/headers.css" rel="stylesheet" />
-    <link href="css/_dropdown.scss" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-
+ 
     <title>Event Planners</title>
     <style>
       body {
