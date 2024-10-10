@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -90,7 +91,7 @@
   </head>
 
   <body>
-    <%@include file="/header.jsp"%>
+    <%@include file="/newHeader.jsp"%>
     <div class="container_b">
       <div class="box">
         <h1 class="text">Welcome Amanda Smith!</h1>
