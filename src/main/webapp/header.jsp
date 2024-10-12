@@ -50,7 +50,7 @@
 							class="nav-link px-2 link-body-emphasis">Collaborators</a></li>
 						<li><a href="event_planners.jsp"
 							class="nav-link px-2 link-body-emphasis">Event Planners</a></li>
-						<li><a href="#" class="nav-link px-2 link-body-emphasis">My
+						<li><a href="GetAllEventsServlet" class="nav-link px-2 link-body-emphasis">My
 								Events</a></li>
 					</ul>
 

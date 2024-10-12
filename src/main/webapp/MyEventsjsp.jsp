@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,17 +27,32 @@
             </div>
 
             <div class="events-list">
-                <div class="event-card" onclick="window.location.href='MyEvent_Read_Delete.jsp'">
+            <c:forEach var="event"  items="${allEvents}">
+                <div class="event-card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh0GOGOY_uu5hiewRG751hMy5ZaYhEBcw4_pOSK2oj3znSVuvQxBhz_NR6dPnhuDKyfg&usqp=CAU" alt="Rock Revolt: Power and Passion">
                     <div class="event-details">
-                        <h3>Rock Revolt: Power and Passion</h3>
-                        <p class="partyType">Birthday party</p>
-                        <p class="EPname">EP name</p>
-                        <p class="date">09-12-2023</p>
+                        <h3>${event.eventName}</h3>
+                       <b><p>Event Category :</b> <p class="EPname">${event.eventCategory}</p>
+                       <b><p>Event Planner :</b> <p class="EPname">${event.eventPlanner}</p>
+                       <b><p>Description : :</b> <p class="EPname">${event.description}</p>
+                         
+                         <p class="partyType">Collaborators</p>
+                         <b><p>Event Decoration:</b><p class="EPname">${event.decoration}</p>
+                          <b><p>Event Refreshments :</b><p class="EPname">${event.refreshments}</p>
+                           <b><p>Event Location :</b><p class="EPname">${event.location}</p>
+                            <b><p>Event Cakes:</b><p class="EPname">${event.cakes}</p>
+                             <b><p>Event Photography :</b><p class="EPname">${event.photography}</p>
+                              <b><p>Event Florist :</b><p class="EPname">${event.florist}</p>
+                              <b><p>Event Invitations :</b> <p class="EPname">${event.invitations}</p>
+                               <b><p>Event MakeUpArtist :</b> <p class="EPname">${event.makeupArtist}</p>
+                                
+                        
                     </div>
+                    <button>update</button> <button>Delete</button>
                 </div>
+                </c:forEach>
 
-                <div class="event-card" onclick="redirectToEvent('MyEvent_Read_Delete.jsp')">
+                <!-- <div class="event-card" onclick="redirectToEvent('MyEvent_Read_Delete.jsp')">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgZbdzGzVrePmT4up1WzZ8xrom5sNDQP6BUQIB2L93GF18GOP5YHYOfTuCx5An3GxYyfo&usqp=CAU" alt="An Oil Painting Odyssey">
                     <div class="event-details">
                         <h3>Brushstrokes & Beyond: An Oil Painting Odyssey</h3>
@@ -44,7 +60,7 @@
                         <p class="EPname">EP name</p>
                         <p class="date">18-10-2023</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

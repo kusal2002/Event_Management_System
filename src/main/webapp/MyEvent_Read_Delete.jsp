@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +14,22 @@
 </head>
 <body>  
  <%@include file="/header.jsp"%>
+ <c:set var="events" value= "${eventsModel}"/>
     <section class="event-details">
-        <h1 style="text-align: center;">Chim's 21</h1>
+        <h1 style="text-align: center;">${eventsModel.eventName}</h1>
         <h2>About event</h2>
         <div class="event-info">
             <div class="event-type">
-                <p><strong>DATE:</strong></p>
-                <p>09-12-2023</p>
-                <p><strong>EVENT CATEGORY:</strong></p>
-                <p>Birthday Party</p>
-                <p><strong>TIME:</strong></p>
-                <p>03.00PM</p>
+                
+                <p><strong>Event Category</strong></p>
+                <p>${eventsModel.eventCategory}</p>
+                
                 <p><strong>EVENT PLANNER:</strong></p>
-                <p>EP Chim</p>
+                <p>${eventsModel.eventPlanner}</p>
                 <p><strong>DESCRPTION:</strong></p> 
-            <p>Rock Revolt: A Fusion of Power and Passion is an electrifying rock music event that brings together a diverse lineup of talented rock bands and artists. The event aims to showcase the raw energy, intense power...</p>
+            <p>${eventsModel.description}</p>
+           </div>
+           </div>
     </section>
 
     <section class="collaborators">
@@ -35,41 +37,44 @@
         <div class="collaborator-grid">
             <div class="collaborator-item">
                 <div class="collab-icon">🎈</div>
-                <p><strong>DECORATIONS</strong></p><p>Deco by hashii</p>
+                <p><strong>DECORATIONS</strong></p><p>${eventsModel.decoration}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">🍹</div>
-                <p><strong>REFRESHMENTS</strong></p><p>Amila cafe</p>
+                <p><strong>REFRESHMENTS</strong></p><p>${eventsModel.refreshments}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">🏢</div>
-                <p><strong>LOCATION</strong></p><p>Hotel Clarion</p>
+                <p><strong>LOCATION</strong></p><p>${eventsModel.location}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">🎂</div>
-                <p><strong>CAKES</strong></p><p>Cakes by hasshiiiiiiiiiiiiiiii</p>
+                <p><strong>CAKES</strong></p><p>${eventsModel.cakes}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">📷</div>
-                <p><strong>PHOTOGRAPHY</strong></p><p>Pixel studios</p>
+                <p><strong>PHOTOGRAPHY</strong></p><p>${events.photography}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">💐</div>
-                <p><strong>Florists</strong></p><p>Amalka flora</p>
+                <p><strong>Florists</strong></p><p>${eventsModel.florist}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">💌</div>
-                <p><strong>INVITATIONS</strong></p><p>Happy cards</p>
+                <p><strong>INVITATIONS</strong></p><p>${eventsModel.invitations}</p>
             </div>
             <div class="collaborator-item">
                 <div class="collab-icon">🪞</div>
-                <p><strong>MAKEUP ARTISTS</strong></p><p>Salon Dul</p>
+                <p><strong>MAKEUP ARTISTS</strong></p><p>${eventsModel.makeupArtist}</p>
             </div>
         </div>
         <div class="edit-buttons">
             <button class="edit-btn" onclick="window.location.href='MyEvent_Edit.jsp'">Edit Event</button>
             <button class="delete-btn">Delete Event</button>
         </div>
+        
+        
+        
     </section>
     <%@include file="/footer.jsp"%>
 </body>

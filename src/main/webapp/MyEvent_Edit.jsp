@@ -26,10 +26,7 @@
                         <label for="eventName">Event Name*</label>
                         <input type="text" id="eventName" name="eventName" placeholder="Make it catchy and memorable">
                     </div>
-                    <div class="form-group">
-                        <label for="eventDate">Date</label>
-                        <input type="date" id="eventDate" name="eventDate" placeholder="Select Date">
-                    </div>
+                    
                     <div class="form-group">
                         <label for="eventCategory">Event Category</label>
                         <select id="eventCategory" name="eventCategory" placeholder="Select Category">
@@ -41,10 +38,7 @@
                             <option value="Office Party">Office Party</option>
                           </select>
                         </div>
-                    <div class="form-group">
-                        <label for="eventTime">Time</label>
-                        <input type="time" id="eventTime" name="eventTime" placeholder="Select Time">
-                    </div>
+                    
                     <div class="form-group">
                         <label for="eventPlanner">Event Planner</label>
                         <select id="eventPlanner" name="eventPlanner" placeholder="Select EventPlanner">
@@ -60,12 +54,12 @@
                         <label for="description">Description</label>
                         <textarea id="description" name="description" placeholder="Provide essential event details"></textarea>
                     </div>
-                </form>
-            </div>
+                
+            
 
-            <div class="collaborators">
+            
                 <h2>Select Collaborators</h2>
-                <form>
+                
                     <div class="form-group">
                         <label for="decorations">Decorations</label>
                         <select id="decorations" name="decoration">
@@ -138,7 +132,7 @@
                     </div>
                     <div class="form-group">
                         <label for="makeupArtists">Makeup Artists</label>
-                        <select id="makeupArtists" name="makeupArtists">
+                        <select id="makeupArtists" name="makeupArtist">
                             <option value="none">none</option>
                             <option value="Salon Priya">Salon Priya</option>
                             <option value="Salon Rajarata">Salon Rajarata</option>
