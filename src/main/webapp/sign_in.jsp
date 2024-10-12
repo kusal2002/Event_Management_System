@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -149,7 +149,7 @@ label {
 					<input type="checkbox" required> I agree with <a href="#">Terms
 						& Conditions</a>
 				</div>
-				<a href="register.jsp"><button type="submit">Sign In</button></a>
+				<a href="home.jsp"><button type="submit">Sign In</button></a>
 			</form>
 			<div class="signup-link">
 				<p>

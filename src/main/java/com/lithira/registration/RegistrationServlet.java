@@ -27,7 +27,7 @@ public class RegistrationServlet extends HttpServlet {
 		
 		if (isTrue == true) {
 			String alertMessage ="Data Insert Successful";
-			response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='GetAllServlet'</script>");
+			response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='log_in.jsp'</script>");
 		} else {
 			RequestDispatcher disp = request.getRequestDispatcher("sign_up.jsp");
 			disp.forward(request, response);

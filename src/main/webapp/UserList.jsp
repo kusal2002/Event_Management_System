@@ -17,14 +17,14 @@
 			<th>User Name</th>
 			<th>Password</th>
 		</tr>
-		<c:forEach var="users" items="${allUsers}">
+		<c:forEach var="user" items="${allUsers}">
 			<tr>
-			<td>${book.fname}</td>
-			<td>${book.lname}</td>
-			<td>${book.cnumber}</td>
-			<td>${book.mail}</td>
-			<td>${book.username}</td>
-			<td>${book.password}</td>
+			<td>${users.fname}</td>
+			<td>${users.lname}</td>
+			<td>${users.cnumber}</td>
+			<td>${users.mail}</td>
+			<td>${users.username}</td>
+			<td>${users.password}</td>
 		</tr>
 		</c:forEach>
 		

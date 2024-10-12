@@ -184,7 +184,7 @@ table, th, td {
 					<input type="checkbox" required> I agree with <a href="#">Terms
 						& Conditions</a>
 				</div>
-				<a href="register.jsp"><button type="submit">Sign up</button></a>
+				<a href="login.jsp"><button type="submit">Sign up</button></a>
 			</form>
 			<div class="signup-link">
 				<p>

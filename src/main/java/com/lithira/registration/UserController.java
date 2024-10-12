@@ -1,7 +1,6 @@
 package com.lithira.registration;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -37,11 +36,36 @@ public class UserController {
 		}
 		return isSuccess;
 	}
+	//getone
+	
+		public loginuser getone(loginuser user) {
+			boolean isSuccess = false;
+			try {
+				String query = "selsct * from users where v";
+				
+				// DB Connection Call
+				con = DBConnect.getconnection();
+				stmt = con.createStatement();
+				
+				
+				
+				ResultSet rs = stmt.executeQuery(query);
+				int rs = stmt.executeUpdate(sql);
+				if (rs.next()) {
+					
+				} else {
+					isSuccess = false;
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
 
-	// Read
-	public static List<UserModel> getUsersByID(String Id) {
+	// ReadbyID
+	public static List<UserModel> getUsersByID(String uname) {
 
-		int convertedID = Integer.parseInt(Id);
+		String userName = uname;
 
 		ArrayList<UserModel> user = new ArrayList<>();
 
@@ -51,11 +75,11 @@ public class UserController {
 			stmt = con.createStatement();
 
 			// SQL Query
-			String sql = "select * from users where id'" + convertedID + "'";
+			String sql = "select * from users where username'" + userName + "'";
 
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				int id = rs.getInt(1);
+				String id = rs.getString(1);
 				String fname = rs.getString(2);
 				String lname = rs.getString(3);
 				String cnumber = rs.getString(4);
@@ -71,11 +95,10 @@ public class UserController {
 		}
 		return user;
 	}
-
 	// GetAll Data
 	public static List<UserModel> getAllData() {
 
-		ArrayList<UserModel> users = new ArrayList<>();
+		ArrayList<UserModel> user = new ArrayList<>();
 
 		try {
 			// DB Connection Call
@@ -95,12 +118,59 @@ public class UserController {
 				String password = rs.getString(7);
 
 				UserModel um = new UserModel(fname, lname, cnumber, mail, username, password);
-				users.add(um);
+				user.add(um);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return users;
+		return user;
 	}
+
+	//Update User
+	public static boolean updateuser(String id,String fname, String lname, String cnumber, String mail, String username,
+			String password) {
+		
+		try {
+			// DB Connection Call
+			con = DBConnect.getconnection();
+			stmt = con.createStatement();
+
+			// SQL Query
+			String sql = "update users set fname='"+fname+"',lname='"+lname+"',cnumber='"+cnumber+"',mail='"+mail+"',username='"+username+"',password='"+password+"'"+ "where id='"+id+"'";
+			int rs = stmt.executeUpdate(sql);
+			if (rs > 0) {
+				isSuccess = true;
+			} else {
+				isSuccess = false;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return isSuccess;
+		
+	}
+	
+	//Delete User
+		public static boolean deluser(String id) {
+			int convID = Integer.parseInt(id);
+			try {
+				// DB Connection Call
+				con = DBConnect.getconnection();
+				stmt = con.createStatement();
+
+				// SQL Query
+				String sql = "delete from users where id='"+convID+"'";
+				int rs = stmt.executeUpdate(sql);
+				if (rs > 0) {
+					isSuccess = true;
+				} else {
+					isSuccess = false;
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return isSuccess;
+			
+		}
 
 }

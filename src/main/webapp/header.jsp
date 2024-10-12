@@ -61,7 +61,7 @@
 					
 					<ul type="none" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
 						<li>
-							<a style="color: black;text-decoration: none;text-align: right;"  href="#"><%=session.getAttribute("name") %></a>
+							<a style="color: black;text-decoration: none;text-align: right;"  href="#"><%=session.getAttribute("fname") %></a>
 						</li>
 					</ul>
 
@@ -76,7 +76,7 @@
 							<li><a class="dropdown-item" href="MyEventsjsp.jsp">My
 									Events</a></li>
 							<li><a class="dropdown-item" href="#">Settings</a></li>
-							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><a class="dropdown-item" href="GetAllServlet">Profile</a></li>
 							<li>
 								<hr class="dropdown-divider" />
 							</li>

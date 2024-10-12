@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<%-- <%
-		if (session.getAttribute("name")==null){
+<%
+		if (session.getAttribute("fname")==null){
 			response.sendRedirect("sign_in.jsp");
 		}
 
 %>
-     --%>
+    
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -44,8 +44,13 @@ public class SigninServlet extends HttpServlet {
 			
 			ResultSet rs = pst.executeQuery();
 			if (rs.next()) {
-				session.setAttribute("name", rs.getString("fname"));
-				disp = request.getRequestDispatcher("home.jsp");
+				session.setAttribute("fname", rs.getString("fname"));
+				session.setAttribute("lname", rs.getString("lname"));
+				session.setAttribute("cnumber", rs.getString("cnumber"));
+				session.setAttribute("mail", rs.getString("mail"));
+				session.setAttribute("username", rs.getString("username"));
+				session.setAttribute("password", rs.getString("password"));
+				disp = request.getRequestDispatcher("view.jsp");
 			}else {
 				request.setAttribute("status", "failed");
 				disp = request.getRequestDispatcher("sign_in.jsp");
@@ -54,10 +59,10 @@ public class SigninServlet extends HttpServlet {
 		
 		
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}

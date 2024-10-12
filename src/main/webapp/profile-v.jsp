@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -87,21 +87,60 @@
       }
     </style>
   </head>
-
   <body>
     <%@include file="/header.jsp"%>
+    
+    
+    
+
     <div class="container_b">
+    
       <div class="box">
-        <h1 class="text">Welcome Amanda Smith!</h1>
+      	
+      	
+      	
+        <h1 class="text">Welcome <%=session.getAttribute("fname") %>&nbsp;<%=session.getAttribute("lname") %></h1>
         <img src="images/Avatar.png" />
-        <h2 class="first-name">Amanda Smith</h2>
-        <p><img src="images/svg/mail.svg" class="svg" />Amanda@email.com</p>
-        <p><img src="images/svg/call.svg" class="svg" />+94 771446789</p>
+        <h2 class="first-name"><%=session.getAttribute("fname") %>&nbsp;<%=session.getAttribute("lname") %></h2>
+        <p><img src="images/svg/mail.svg" class="svg"/><%=session.getAttribute("mail") %></p>
+        <p><img src="images/svg/call.svg" class="svg" /><%=session.getAttribute("cnumber") %></p>
+
+<%-- 
+			<table>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Contact Number</th>
+			<th>E Mail</th>
+			<th>User Name</th>
+			<th>Password</th>
+			<th>action</th>
+		</tr>
+		<c:forEach var="users" items="${allUsers}">
+		<tr>
+			<td>"${users.fname}"</td>
+			<td>${users.lname}</td>
+			<td>${users.cnumber}</td>
+			<td>${users.mail}</td>
+			<td>${users.username}</td>
+			<td>${users.password}</td>
+			<td>
+			<a href="UpdateUserServlet?id=${users.id}&f_name=${users.fname}&l_name=${users.lname}&Cnumber=${users.cnumber}&mail=${users.mail}&username=${users.username}&password=${users.password}">
+				<button class="button">Edit Profile</button>
+			</a>
+			</td>
+		</tr>
+		</c:forEach>
+ --%>
 
         <div class="flex-container">
-          <div><a href="update_profile.jsp"><button class="button">Edit Profile</button></a></div>
+          <%-- <div><a href="UpdateUserServlet?id=${users.id}&f_name=${users.fname}&l_name=${users.lname}&Cnumber=${users.cnumber}&mail=${users.mail}&username=${users.username}&password=${users.password}"><button class="button">Edit Profile</button></a></div>
+           --%><div><a href="update_profile"><button class="button">Edit Profile</button></a></div>
           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-          <div><button class="button">Delete Profile</button></div>
+          <div>
+          <form action="deleteUser" method="post">
+          		<button class="button">Delete Profile</button></div>
+          </form>
         </div>
       </div>
     </div>

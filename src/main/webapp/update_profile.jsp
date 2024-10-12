@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,26 +152,54 @@ table, th, td {
 </head>
 <body>
 	<%@include file="/header.jsp"%>
+
+	<%
+	String id = request.getParameter("id");
+	String fname = request.getParameter("f_name");
+	String lname = request.getParameter("l_name");
+	String cnumber = request.getParameter("Cnumber");
+	String mail = request.getParameter("mail");
+	String username = request.getParameter("username");
+	String password = request.getParameter("password");
+	%>
+
+
 	<div class="container_b">
 		<div class="form-box">
-			<a href="edit_profile.jsp"><img src="images/svg/xmark.svg"
+			<a href="profile-v.jsp"><img src="images/svg/xmark.svg"
 				class="cls-btn"></a>
 			<h2 class="name">Amanda Smith</h2>
 			<p>Edit Your Details</p>
-			<form action="#">
-				<label for="first-name">First name</label> <input type="text"
-					name="f_name" placeholder="Saman" required /> <label
-					for="last-name">Last name</label> <input type="text" name="l_name"
-					placeholder="Kumara" required /> <label for="contact-number">Contact
-					number</label> <input type="text" name="Cnumber"
-					placeholder="07XXXXXXXX" required /> <label
-					for="email">Email</label> <input type="text" name="mail"
-					placeholder="example@gmail.com" required /> <label for="user-name">Username</label>
-				<input type="text" name="username" placeholder="Username" required />
-				<label for="password">Password</label> <input type="password"
-					name="password" placeholder="Password (8 characters)" required />
-				<a href="register.jsp"><button type="submit">Save</button></a>
+			<form action="UpdateUserServlet" method="get">
+			
+				<%-- <c:set var="user" value="${allUsers}" /> --%>
+				
+				
+				<label for="first-name">First name</label> 
+				<input type="text" name="f_name" value="<%=session.getAttribute("fname") %>" required />
+				
+				<label for="last-name">Last Name</label> 
+				<input type="text"	name="l_name" value="<%=session.getAttribute("lname") %>" required /> 
+				
+				<label for="contact-number">Contact Number</label> 
+				<input type="text"name="Cnumber" value="<%=session.getAttribute("cnumber") %>" required /> 
+				
+				<label for="email">Email</label>
+				<input type="text" name="mail" value="<%=session.getAttribute("mail") %>" required /> 
+				
+				<label	for="user-name">Username</label> 
+				<input type="text" name="username"value="<%=session.getAttribute("username") %>" required /> 
+				
+				<label for="password">Password</label>
+				<input type="text" name="password" value="<%=session.getAttribute("password") %>" required />
+				
+				
+				<a href="UpdateUserServlet?id=${users.id}&fname=${users.fname}&lname=${users.lname}&cnumber=${users.cnumber}&mail=${users.mail}&username=${users.username}&username=${users.password}">
+					<button type="submit">Update</button>
+				</a>
+				
 			</form>
+
 		</div>
 	</div>
 	<%@include file="/footer.jsp"%>

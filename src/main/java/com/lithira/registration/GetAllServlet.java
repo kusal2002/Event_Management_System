@@ -20,7 +20,7 @@ public class GetAllServlet extends HttpServlet {
 		List<UserModel>AllUsers = UserController.getAllData();
 		request.setAttribute("allUsers",AllUsers);
 		
-		RequestDispatcher disp = request.getRequestDispatcher("UserList.jsp");
+		RequestDispatcher disp = request.getRequestDispatcher("profile-v.jsp");
 		disp.forward(request, response);
 	}
 	
