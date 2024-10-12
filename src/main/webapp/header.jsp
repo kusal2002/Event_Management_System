@@ -46,7 +46,7 @@
 						class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 						<li><a href="home.jsp" class="nav-link px-2 link-secondary">Events</a>
 						</li>
-						<li><a href="collaborator_list.jsp"
+						<li><a href="GetAllCollabs"
 							class="nav-link px-2 link-body-emphasis">Collaborators</a></li>
 						<li><a href="event_planners.jsp"
 							class="nav-link px-2 link-body-emphasis">Event Planners</a></li>

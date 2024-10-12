@@ -64,7 +64,11 @@
         <center>
         <br><br>
         <button type="button" value="Edit" class="edit-btn" onclick="window.location.href='collabUpdate.jsp'">Edit</button>
-        <button type="button" value="Delete" class="delete-btn" onclick="alert('Deleted')">Delete</button>
+        
+        <form action="collabDeleteServlet" method="post">
+        <button type="button" value="Delete" class="delete-btn">Delete</button>
+        </form>
+        
         </center>
 
     </section>
