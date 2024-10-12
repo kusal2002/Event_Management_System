@@ -3,6 +3,7 @@
   <display-name>Event_Management_System</display-name>
   
   <servlet>
+
   	<servlet-name>GetAllServlet</servlet-name>
   	<servlet-class>com.lithira.registration.GetAllServlet</servlet-class>
   </servlet>
@@ -20,6 +21,47 @@
   <servlet-mapping>
   	<servlet-name>UpdateUserServlet</servlet-name>
   	<url-pattern>/updateuserservlet</url-pattern>
+</servlet-mapping>
+  <servlet>
+  	<servlet-name>InsertCollabServlet</servlet-name>
+  	<servlet-class>com.chanith.collaborator.InsertCollabServlet</servlet-class>
+ 
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>InsertCollabServlet</servlet-name>
+  	<url-pattern>/insertcollabservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GetAllCollabs</servlet-name>
+  	<servlet-class>com.chanith.collaborator.GetAllCollabs</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetAllCollabs</servlet-name>
+  	<url-pattern>/getallcollabs</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  	<servlet-name>collabUpdateServlet</servlet-name>
+  	<servlet-class>com.chanith.collaborator.collabUpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>collabUpdateServlet</servlet-name>
+  	<url-pattern>/collabupdateservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>collabDeleteServlet</servlet-name>
+  	<servlet-class>com.chanith.collaborator.collabDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>collabDeleteServlet</servlet-name>
+  	<url-pattern>/collabdeleteservlet</url-pattern>
+
   </servlet-mapping>
   
 </web-app>
