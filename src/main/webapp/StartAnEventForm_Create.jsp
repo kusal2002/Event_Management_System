@@ -8,7 +8,10 @@
     <title>Start an Event</title>
     <link rel="stylesheet" href="css/chim_css/Create an Event.css">
     <link rel="icon" href="images/logo11.png" />
-    
+    <script src="js/color-modes.js"></script>
+    <link href="css/headers.css" rel="stylesheet" />
+    <link href="css/_dropdown.scss" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <%@include file="/header.jsp"%>
@@ -20,15 +23,12 @@
 
             <div class="general-info">
                 <h2>General Information</h2>
-                <form>
+                <form action="eventsInsertServlet" method="post">
                     <div class="form-group">
-                        <label for="eventName">Event Name*</label>
+                        <label for="eventName">Event Name</label>
                         <input type="text" id="eventName" name="eventName" placeholder="Make it catchy and memorable">
                     </div>
-                    <div class="form-group">
-                        <label for="eventDate">Date</label>
-                        <input type="date" id="eventDate" name="eventDate" placeholder="Select Date">
-                    </div>
+                    
                     <div class="form-group">
                         <label for="eventCategory">Event Category</label>
                         <select id="eventCategory" name="eventCategory" placeholder="Select Category">
@@ -40,33 +40,30 @@
                             <option value="Office Party">Office Party</option>
                           </select>
                         </div>
-                    <div class="form-group">
-                        <label for="eventTime">Time</label>
-                        <input type="time" id="eventTime" name="eventTime" placeholder="Select Time">
-                    </div>
+                    
                     <div class="form-group">
                         <label for="eventPlanner">Event Planner</label>
                         <select id="eventPlanner" name="eventPlanner" placeholder="Select EventPlanner">
                             <option value="EP chim">EP Chim</option>
                             <option value="EP Chanith">EP Chanith</option>
-                            <option value="EP Chanith">EP Tudakshana</option>
-                            <option value="EP Chanith">EP Sanjana</option>
-                            <option value="EP Chanith">EP Yohan</option>
-                            <option value="EP Chanith">EP Lithira</option>
+                            <option value="EP Tudakshana">EP Tudakshana</option>
+                            <option value="EP Sanjana">EP Sanjana</option>
+                            <option value="EP Yohan">EP Yohan</option>
+                            <option value="EP Lithira">EP Lithira</option>
                           </select>
                         </div>
                     <div class="form-group full">
                         <label for="description">Description</label>
                         <textarea id="description" name="description" placeholder="Provide essential event details"></textarea>
                     </div>
-                </form>
-            </div>
+               
+            
 
-            <div class="collaborators">
+            
                 <h2>Select Collaborators</h2>
-                <form>
+               
                     <div class="form-group">
-                        <label for="decorations">Decorations</label>
+                        <label for="decorations">Decoration</label>
                         <select id="decorations" name="decoration">
                             <option value="none">none</option>
                             <option value="Deco by Hashii">Deco by Hashii</option>
@@ -77,7 +74,7 @@
                     </div>
                     <div class="form-group">
                         <label for="refreshments">Refreshments</label>
-                        <select id="refreshments" name="refreshmets">
+                        <select id="refreshments" name="refreshments">
                             <option value="none">none</option>
                             <option value="FAB">FAB</option>
                             <option value="P&S">P&S</option>
@@ -117,7 +114,7 @@
                     </div>
                     <div class="form-group">
                         <label for="florists">Florists</label>
-                        <select id="florists" name="florists">
+                        <select id="florists" name="florist">
                             <option value="none">none</option>
                             <option value="Amalka Flora">Amalka Flora</option>
                             <option value="Chamathkara Flora">Chamathkara Flora</option>
@@ -137,7 +134,7 @@
                     </div>
                     <div class="form-group">
                         <label for="makeupArtists">Makeup Artists</label>
-                        <select id="makeupArtists" name="makeupArtists">
+                        <select id="makeupArtists" name="makeupArtist">
                             <option value="none">none</option>
                             <option value="Salon Priya">Salon Priya</option>
                             <option value="Salon Rajarata">Salon Rajarata</option>
