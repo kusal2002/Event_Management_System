@@ -34,7 +34,7 @@
   	<url-pattern>/eventsUpdateServlet</url-pattern>
   </servlet-mapping> -->
   
-  <servlet>
+  <!-- <servlet>
   	<servlet-name>GetEventByIdServlet </servlet-name>
   	<servlet-class>com.chim.createEvent.GetEventByIdServlet </servlet-class>
   </servlet>
@@ -43,4 +43,4 @@
   	<servlet-name>GetEventByIdServlet </servlet-name>
   	<url-pattern>/geteventbyidservlet </url-pattern>
   </servlet-mapping> 
-</web-app>
+</web-app> 
