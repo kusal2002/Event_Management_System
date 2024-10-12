@@ -20,26 +20,27 @@
             <h1>Enter Collaborator Details</h1>
         </div>
     </section> 
-
+    
+    <form method="post" action="InsertCollabServlet" >
     <section class="event-details">
         <h2>Collaborator Form</h2>
         <div class="container_ch">
             <h3>General Information</h3><br>
             <div class="form-section">
                 <label for="collaborator-name">Collaborator Name</label>
-                <input type="text" id="collaborator-name" name="vend-name" placeholder="Enter collaborator name" required>
+                <input type="text" id="collaborator-name" name="cName" placeholder="Enter collaborator name" required>
                 
                 <label for="contact-number">Contact Number</label>
-                <input type="text" id="contact-number" name="vend-contact" placeholder="Enter contact number">
+                <input type="text" id="contact-number" name="cContactNo" placeholder="Enter contact number">
                 
                 <label for="address">Address</label>
-                <input type="text" id="address" name="vend-address" placeholder="Enter address">
+                <input type="text" id="address" name="cAddress" placeholder="Enter address">
             </div>
     
             <div class="form-section">
                 <label for="service-type">Service Category</label>
                 <!--  <input type="text" id="service-type" name="vend-serviceCategory" placeholder="Enter the service-type">  -->
-                <select id="service-type" name="vend-serviceCategory" placeholder="Enter the service-category">
+                <select id="service-type" name="cServiceCat" placeholder="Enter the service-category">
                     <option value="" disabled selected>Select a service type</option>
                     <option value="decoration">Decoration</option>
                     <option value="refreshment">Refreshments</option>
@@ -54,30 +55,30 @@
             
             <div class="form-section">
                     <label for="previous-experience">Previous Experience</label>
-                    <input type="text" id="previous-experience" name="vend-experience" placeholder="Enter previous-experience details">
+                    <input type="text" id="previous-experience" name="cPreExperi" placeholder="Enter previous-experience details">
                     
                     <label for="client-feedback">Client Feedback</label>
-                    <textarea id="client-feedback" rows="3" name="cli-Feedback" placeholder="Input description"></textarea>
+                    <textarea id="client-feedback" rows="3" name="cClientFeed" placeholder="Input description"></textarea>
                     
                     <label for="description">Description</label>
-                    <textarea id="description" rows="3" name="vend-Desc" placeholder="Provide Vendor details"></textarea>
+                    <textarea id="description" rows="3" name="cDescription" placeholder="Provide Vendor details"></textarea>
             </div>
             
             <label for="upload-photos">Upload Photos</label>
             
             <center>
             <div class="upload-btn1">
-                <input type="file" id="upload-photos" name="up-photo1">
+                <input type="file" id="upload-photos" name="collabPhoto1">
             </div>
             
             <div class="upload-btn2">
-                <input type="file" id="upload-photos" name="up-photo2">
+                <input type="file" id="upload-photos" name="collabPhoto2">
             </div>
             </center>
             
-            <button class="save-btn">Save Profile</button>
+            <input type="submit" class="save-btn">
         </div>
-    </section>
+    </section></form>
     
     <%@include file="/footer.jsp"%>
 
