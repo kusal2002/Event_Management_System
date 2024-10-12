@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>Event_Management_System</display-name>
-  <!-- 
-  <servlet>
-  	<servlet-name>GetAllServlet</servlet-name>
-  	<servlet-class>/GetAllServlet</servlet-class>
+  
+    <!-- <servlet>
+  	<servlet-name>eventsInsertServlet</servlet-name>
+  	<servlet-class>com.chim.createEvent.eventsInsertServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  	<servlet-name>GetAllServlet</servlet-name>
-  	<url-pattern>/GetAllServlet</url-pattern>
-  </servlet-mapping>
-   -->
+  	<servlet-name>eventsInsertServlet</servlet-name>
+  	<url-pattern>/eventsinsertservlet</url-pattern>
+  </servlet-mapping>   -->
+  
+  
+  <!-- <servlet>
+  	<servlet-name>GetAllEventsServlet</servlet-name>
+  	<servlet-class>com.chim.createEvent.GetAllEventsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetAllEventsServlet</servlet-name>
+  	<url-pattern>/getalleventsservlet</url-pattern>
+  </servlet-mapping> -->
+  
+  
+  <!-- <servlet>
+  	<servlet-name>eventsUpdateServlet</servlet-name>
+  	<servlet-class>com.chim.createEvent.eventsUpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>eventsUpdateServlet</servlet-name>
+  	<url-pattern>/eventsUpdateServlet</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+  	<servlet-name>GetEventByIdServlet </servlet-name>
+  	<servlet-class>com.chim.createEvent.GetEventByIdServlet </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetEventByIdServlet </servlet-name>
+  	<url-pattern>/geteventbyidservlet </url-pattern>
+  </servlet-mapping> 
 </web-app>
